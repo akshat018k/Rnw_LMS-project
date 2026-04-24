@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(168, 255, 168, 0.5);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+}
+
+/* LEFT */
+.h-content h2{
+    font-size: 24px;
+}
+
+.h-content p{
+    color: gray;
+    margin: 10px 0 20px;
+}
+
+/* SEARCH */
+.search{
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    background: white;
+}
+
+.search input{
+    padding: 10px;
+    width: 100%;
+}
+
+.search button{
+    padding: 15px;
+}
+
+/* LOGO */
+.logo img{
+    width: 120px;
+}
+
+/* PRODUCT BAR */
+.h-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.menu, .cate{
+    display: flex;
+    gap: 10px;
+}
+
+select{
+    padding: 6px;
+    border-radius: 5px;
+}
+
+/* PRODUCTS GRID */
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.products-box{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.products-box:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BADGE */
+.block{
+    height: 40px;
+}
+
+.sale, .pr{
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: white;
+}
+
+.sale{
+    background: red;
+}
+
+.pr{
+    background: green;
+}
+
+/* IMAGE */
+.product-img img{
+    width: 100%;
+    height: 140px;
+    object-fit: contain;
+}
+
+/* TEXT */
+.content p{
+    color: gray;
+    font-size: 12px;
+}
+
+.content h4{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* RATING */
+.content span{
+    font-size: 12px;
+}
+
+/* PRICE + BUTTON */
+.payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment h4{
+    font-size: 14px;
+}
+
+.payment del{
+    color: gray;
+    margin-left: 5px;
+}
+
+/* BUTTON */
+.payment button{
+    background: green;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
